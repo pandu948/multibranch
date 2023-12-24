@@ -1,0 +1,29 @@
+	pipeline {    
+	agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building...'
+                // echo "bulding of branch_1 jenkins file"
+                // mvn clean
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo 'Testing...'
+                // echo "testing of branch_1 jenkins file"
+                // mvn test
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                echo 'installe...'
+                // echo " install of branch_1 jenkins file"
+                // mvn install
+            }
+        }
+    }
+}
